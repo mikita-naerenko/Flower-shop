@@ -1,0 +1,26 @@
+.social__item {
+margin: 0 20px 0 20px;
+
+  &:first-child {
+
+    margin-left: 0;
+  }
+  &:last-child {
+
+    margin-right: 0;
+  }
+}
+
+.social__icons--insta,
+.social__icons--tw,
+.social__icons--fb {
+
+  &:hover {
+    fill: #ada6ed;
+  }
+
+  &:active {
+    fill: #ada6ed;
+    opacity: 0.3;
+  }
+}

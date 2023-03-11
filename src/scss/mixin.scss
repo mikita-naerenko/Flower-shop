@@ -1,0 +1,28 @@
+@mixin about-text-mobile {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@mixin about-text-tablet {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@mixin reset-ul-ol-li {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+@mixin reset-a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+}

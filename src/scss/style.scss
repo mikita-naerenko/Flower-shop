@@ -1,0 +1,27 @@
+@import "mixin.scss";
+@import "variables.scss";
+@import "normalize.scss";
+@import "visually-hidden.scss";
+@import "fonts.scss";
+@import "button.scss";
+@import "copyright.scss";
+@import "main-nav.scss";
+@import "page-footer.scss";
+@import "page-header.scss";
+@import "site-list.scss";
+@import "social.scss";
+@import "user-list.scss";
+
+
+
+
+.global-style {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: #ebebeb;
+}
+
+
+
+

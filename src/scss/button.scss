@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  padding: 14px 10px;
+  width: 100%;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #444444;
+  background-color: #ebebeb;
+
+  border: 2px solid #4d568a;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #444444;
+    border-color: #444444;
+    color: #ffffff!important;
+  }
+
+  &:active {
+    color: #7c7c7c!important;
+  }
+}
+
+.button__cart {
+  display: block;
+
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+}

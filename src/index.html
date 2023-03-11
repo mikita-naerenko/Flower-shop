@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Flowers shop</title>
+</head>
+<body class="global-style">
+  <svg style="display:none">
+    @@include('../dist/img/symbol/svg/sprite.symbol.svg');
+  </svg>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__board">
+      <a href="index.html" class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="@img/svg/flowers-shop-logo.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="@img/svg/flowers-shop-logo.svg" width="100" height="66" >
+          <img class="main-nav__logo-image" src="@img/svg/flowers-shop-logo.svg" width="86" height="35" alt="">
+
+        </picture>
+      </a>
+    <button class="main-nav__toggle " type="button"></button>
+    </div>
+      <ul class="main-nav__list site-list">
+        <a href="catalog.html"><li class="main-nav__item site-list__item main-nav__item--catalog">Catalog</li></a>
+        <a href="form.html"><li class="main-nav__item site-list__item main-nav__item--order">Вouquet to order</li></a>
+        <a href=""><li class="main-nav__item site-list__item main-nav__item--new main-nav__item--mobile-hidden">New arrivals</li></a>
+        <a href=""><li class="main-nav__item site-list__item main-nav__item--sale main-nav__item--mobile-hidden">Sale</li></a>
+      </ul>
+      <ul class="main-nav__list user-list">
+       <a href=""><li class="main-nav__item user-list__item user-list__item--search"><svg class="user-list__icon"  width="30" height="30"><use xlink:href="#search-icon-white"></use></svg><span class="user-list__item--search">Site search</span></li></a>
+        <a href=""><li class="main-nav__item user-list__item user-list__item--cart"><svg class="user-list__icon" width="20" height="20" fill="#d3d2d2"><use xlink:href="#cart-icon-white"></use></svg>Cart: is empty</li></a>
+        <a href=""><li class="main-nav__item user-list__item main-nav__item--delivery main-nav__item--mobile-hidden">Free worldwide shipping</li></a>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <main>
+    
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a href="" class="page-footer__logo"><svg class="page-footer__image"><use xlink:href="#logo-footer"></use></svg></a>
+      <ul class="page-footer__social social">
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--insta" width="30" height="30"><use xlink:href="#instagram-icon"></use></svg></a></li>
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--fb" width="30" height="30"><use xlink:href="#facebook-icon-white"></use></svg></a></li>
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--tw" width="30" height="30"><use xlink:href="#twitter-icon"></use></svg></a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__title">Copyright:</p>
+        <p>This project was created with learning target</p>
+        <p>Icon:<a href="www.iconfinder.com">iconfinder</a></p>
+        <p>Graphics:<a href="www.pinterest.com">pinterest</a></p>
+        <p>The layout of this website was inspired by:<br> <a href="https://htmlacademy.ru/">html Academy's Mishka project.</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/app.min.js"></script>
+</body>
+</html>
