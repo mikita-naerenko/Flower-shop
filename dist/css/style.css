@@ -677,6 +677,91 @@ li {
   fill: #d3d2d2;
 }
 
+.nav-catalog a,
+ul,
+ol,
+li {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-catalog__item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  transition-duration: 150ms;
+}
+
+.nav-catalog__item--interior {
+  background-color: #dccdec;
+}
+
+.nav-catalog__item--toys {
+  background-color: #d0b8ea;
+}
+
+.nav-catalog__item:hover {
+  padding-top: 35px;
+}
+
+.nav-catalog__item:hover .nav-catalog__icon {
+  opacity: 0.7;
+}
+
+.nav-catalog__item:active .nav-catalog__title {
+  opacity: 0.3;
+}
+
+.nav-catalog__item:active .nav-catalog__icon {
+  opacity: 0.3;
+}
+
+.nav-catalog__icon {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  opacity: 0.5;
+  fill: #149080;
+}
+
+.nav-catalog__icon--interior {
+  right: 12%;
+}
+
+.no-webp .hero__jumbotron {
+  background-image: url("../img/hero-test-3.jpg"); }
+
+.hero__jumbotron {
+  width: 100%;
+  min-height: 283px;
+  background-color: #ebebeb;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__slogan {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ebebeb;
+  filter: blur(0.3px);
+  opacity: 0.9;
+  margin: 0;
+  margin-top: -30px;
+  text-align: center;
+}
+
 .global-style {
   font-family: "Roboto", arial, sans-serif;
   font-size: 15px;
@@ -814,6 +899,73 @@ li {
   .user-list__icon {
     position: static;
   }
+
+  .nav-catalog {
+    background-color: #ebebeb;
+  }
+
+  .nav-catalog__wrapper {
+    padding: 0 6.5%;
+  }
+
+  .nav-catalog__list {
+    display: flex;
+  }
+
+  .nav-catalog__item {
+    width: 50%;
+    padding-left: 5%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nav-catalog__wrapper {
+    position: relative;
+  }
+
+  .nav-catalog__wrapper::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/svg/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+  }
+
+  .hero__wrapper {
+    padding: 0 6.5%;
+  }
+
+  .no-webp .hero__jumbotron {
+    background-image: url("../img/hero-test-3.jpg"); }
+
+  .hero__jumbotron {
+    min-height: 253px;
+    background-size: 100%;
+    align-items: flex-start;
+  }
+
+  .hero__slogan {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    margin-top: 72px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .no-webp .hero__jumbotron {
+    background-image: url("../img/hero-test-3@2x.jpg") !important; }
+  .hero__jumbotron {
+    background-size: 100%;
+    min-height: 253px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -882,4 +1034,49 @@ li {
   .user-list {
     width: 36%;
   }
+
+  .nav-catalog__wrapper::after {
+    height: 35px;
+    bottom: -13.49%;
+    background-repeat: repeat-x;
+    background-position: -5px 5px;
+  }
+
+  .hero__slogan {
+    margin-top: 160px;
+  }
+
+  .hero__slogan br {
+    display: none;
+  }
+
+  .hero__slogan--desktop {
+    display: inline !important;
+  }
+
+  .hero__jumbotron {
+    min-height: 400px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .no-webp .hero__jumbotron {
+    background-image: url("../img/hero-test-3@2x.jpg"); }
+}
+
+.webp .hero__jumbotron { background-image: url(../img/hero-test-3.webp); }
+
+@media (min-width: 768px) {
+
+  .webp .hero__jumbotron { background-image: url(../img/hero-test-3.webp); }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+
+  .webp .hero__jumbotron { background-image: url(../img/hero-test-3@2x.webp) !important; }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+  .webp .hero__jumbotron { background-image: url(../img/hero-test-3@2x.webp); }
 }
