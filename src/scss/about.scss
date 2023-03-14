@@ -1,0 +1,106 @@
+.about__wrapper {
+  padding: 33px 10% 55px 10%;
+}
+
+.about__item {
+  position: relative;
+
+}
+
+.about__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  fill: #63d1bb;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about__text {
+  padding-top: 55px;
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+}
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+  .about__item--ecology {
+    order: 1;
+
+  }
+  .about__item--love {
+    order: 2;
+
+  }
+
+  .about__item--style {
+    order: 3;
+  }
+
+  .about__item--support {
+    order: 4;
+
+  }
+
+  .about__item--like {
+    order: 5;
+  }
+
+  .about__item--package {
+    order: 6;
+
+  }
+
+  .about__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__wrapper {
+    padding: 33px 22% 55px 22%;
+  }
+
+}
