@@ -1,0 +1,41 @@
+.form__wrapper {
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.form__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+
+  margin: 0;
+}
+
+.form {
+  font-family: 'Roboto', arial, sans-serif;
+}
+
+.form__important {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+
+  margin-bottom: 30px;
+  display: block;
+}
+
+.form__button {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__text {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 76px;
+
+  }
+}

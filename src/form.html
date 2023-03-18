@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Flowers shop</title>
+</head>
+<body class="global-style">
+  <svg style="display:none">
+    @@include('../dist/img/symbol/svg/sprite.symbol.svg');
+  </svg>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__board">
+      <a href="index.html" class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="@img/svg/flowers-shop-logo.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="@img/svg/flowers-shop-logo.svg" width="100" height="66" >
+          <img class="main-nav__logo-image" src="@img/svg/flowers-shop-logo.svg" width="86" height="35" alt="">
+
+        </picture>
+      </a>
+    <button class="main-nav__toggle " type="button"></button>
+    </div>
+      <ul class="main-nav__list site-list">
+        <a href="catalog.html"><li class="main-nav__item site-list__item main-nav__item--catalog">Catalog</li></a>
+        <a href="form.html"><li class="main-nav__item site-list__item main-nav__item--order">Вouquet to order</li></a>
+      </ul>
+      <ul class="main-nav__list user-list">
+       <a href=""><li class="main-nav__item user-list__item user-list__item--search"><svg class="user-list__icon"  width="30" height="30"><use xlink:href="#search-icon-white"></use></svg><span class="user-list__item--search">Site search</span></li></a>
+        <a href=""><li class="main-nav__item user-list__item user-list__item--cart"><svg class="user-list__icon" width="20" height="20" fill="#d3d2d2"><use xlink:href="#cart-icon-white"></use></svg>Cart: is empty</li></a>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Online Flowers Shop. Form for order.</h1>
+    <h2 class="page-title"> Form for Ordering a Bouquet</h2>
+    <section class="form">
+      <div class="form__wrapper">
+      <p class="form__text">
+        We would love to bring your floral vision to life! Simply complete our easy order form and we'll follow up with you to confirm the specifics.
+      </p>
+      </div>
+      <form action="" class="form">
+
+      <fieldset class="form__fieldset fieldset ">
+        <div class="fieldset__wrapper">
+        <legend class="fieldset__title">Type of bouquet</legend>
+        <ul class="fieldset__list fieldset__list--type">
+          <li class="fieldset__item fieldset__item--type">
+            <input id="round" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="round" class="fieldset__label fieldset__radio">Round</label>
+          </li>
+          <li class="fieldset__item fieldset__item--type">
+            <input id="cascading" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="cascading" class="fieldset__label fieldset__radio">Cascading</label>
+          </li>
+          <li class="fieldset__item fieldset__item--type">
+            <input id="hand-tied" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="hand-tied" class="fieldset__label fieldset__radio">Hand-tied</label>
+          </li>
+          <li class="fieldset__item fieldset__item--type">
+            <input id="nosegay" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="nosegay" class="fieldset__label fieldset__radio">Nosegay</label>
+          </li>
+        </ul>
+      </div>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset--grey">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Includes</legend>
+          <ul class="fieldset__list fieldset__list--includes">
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="daisy" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="daisy" class="fieldset__label fieldset__checkbox">Daisy</label></li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="lily" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="lily" class="fieldset__label fieldset__checkbox">Lily</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="tulip" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="tulip" class="fieldset__label fieldset__checkbox">Tulip</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="sunflower" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="sunflower" class="fieldset__label fieldset__checkbox">Sunflower</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="rose" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="rose" class="fieldset__label fieldset__checkbox">Rose</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="orchid" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="orchid" class="fieldset__label fieldset__checkbox">Orchid</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Full name</legend>
+          <ul class="fieldset__list fieldset__list--name">
+            <li class="fieldset__item fieldset__item--name">
+              <label for="first-name" class="fieldset__label fieldset__name">First name:</label>
+              <input class="fieldset__input fieldset__input--name" id="first-name" type="text" name="name" placeholder="Enter your name*">
+            </li>
+            <li class="fieldset__item fieldset__item--name">
+              <label for="surname" class="fieldset__label fieldset__name">Surname:</label>
+              <input class="fieldset__input fieldset__input--name" id="surname" type="text" name="name" placeholder="Please enter your last name*">
+            </li>
+            <li class="fieldset__item fieldset__item--name">
+              <label for="gender" class="fieldset__label fieldset__name">Gender:</label>
+              <input class="fieldset__input fieldset__input--name" id="gender" type="text" name="name" placeholder="Gender: Optional">
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset--grey">
+        <div class="fieldset__wrapper">
+          <ul class="fieldset__list fieldset__list--contacts">
+            <li  class="fieldset__item fieldset__item--phone"><label class="fieldset__title fieldset__title--contacts" for="phone">Phone</label>
+            <input id="phone" class="fieldset__input fieldset__input--phone" type="tel" name="phone" placeholder="+1 ХХХ-ХХХХ*">
+            <svg class="fieldset__icon fieldset__icon--phone" width="25" height="24"><use xlink:href="#phone-icon"></use></svg>
+            </li>
+            <li  class="fieldset__item fieldset__item--email"><label class="fieldset__title fieldset__title--contacts" for="email">Email</label>
+              <input id="email" class="fieldset__input fieldset__input--email" type="email" name="email" placeholder="Email*">
+              <svg class="fieldset__icon fieldset__icon--email" width="32" height="32"><use xlink:href="#mail-icon"></use></svg>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Additionally</legend>
+          <input type="text" name="text" class="fieldset__input fieldset__input--text" placeholder="Please describe all of your order preferences and specifications">
+        </div>
+      </fieldset>
+      <div class="fieldset__wrapper fieldset__wrapper--footer">
+        <small class="form__important">All fields marked with an asterisk (*) are required.</small>
+        <button class="form__button button" type="submit">SEND AN ORDER</button>
+      </div>
+      </form>
+
+
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a href="" class="page-footer__logo"><svg class="page-footer__image"><use xlink:href="#logo-footer"></use></svg></a>
+      <ul class="page-footer__social social">
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--insta" width="30" height="30"><use xlink:href="#instagram-icon"></use></svg></a></li>
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--fb" width="30" height="30"><use xlink:href="#facebook-icon-white"></use></svg></a></li>
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--tw" width="30" height="30"><use xlink:href="#twitter-icon"></use></svg></a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__title">Copyright:</p>
+        <a href="www.iconfinder.com">iconfinder</a>
+        <a href="www.pinterest.com">pinterest</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.min.js"></script>
+</body>
+</html>
