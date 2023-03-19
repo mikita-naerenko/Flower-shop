@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Flowers shop</title>
+</head>
+<body class="global-style">
+  <svg style="display:none">
+    @@include('../dist/img/symbol/svg/sprite.symbol.svg');
+  </svg>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__board">
+      <a href="index.html" class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="@img/svg/flowers-shop-logo.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="@img/svg/flowers-shop-logo.svg" width="100" height="66" >
+          <img class="main-nav__logo-image" src="@img/svg/flowers-shop-logo.svg" width="86" height="35" alt="">
+
+        </picture>
+      </a>
+    <button class="main-nav__toggle " type="button"></button>
+    </div>
+      <ul class="main-nav__list site-list">
+        <a href="catalog.html"><li class="main-nav__item site-list__item main-nav__item--catalog">Catalog</li></a>
+        <a href="form.html"><li class="main-nav__item site-list__item main-nav__item--order">Вouquet to order</li></a>
+        <a href=""><li class="main-nav__item site-list__item main-nav__item--new main-nav__item--mobile-hidden">New arrivals</li></a>
+        <a href=""><li class="main-nav__item site-list__item main-nav__item--sale main-nav__item--mobile-hidden">Sale</li></a>
+      </ul>
+      <ul class="main-nav__list user-list">
+       <a href=""><li class="main-nav__item user-list__item user-list__item--search"><svg class="user-list__icon"  width="30" height="30"><use xlink:href="#search-icon-white"></use></svg><span class="user-list__item--search">Site search</span></li></a>
+        <a href=""><li class="main-nav__item user-list__item user-list__item--cart"><svg class="user-list__icon" width="20" height="20" fill="#d3d2d2"><use xlink:href="#cart-icon-white"></use></svg>Cart: is empty</li></a>
+        <a href=""><li class="main-nav__item user-list__item main-nav__item--delivery main-nav__item--mobile-hidden">Free worldwide shipping</li></a>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Online Flowers Shop</h1>
+    <div class="hero__wrapper">
+      <h2 class="page-title page-title--catalog">Catalog</h2>
+    </div>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <ul class="catalog__list ">
+          <li class="catalog__item product-card">
+            <a href="#" class="catalog__link product-card__link"><picture >
+              <source media="(min-width:1200px)" srcset="@img/catalog-1.jpg 1x,
+                                                          @img/catalog-1@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="@img/catalog-1.jpg 1x,
+                                                        @img/catalog-1@2x.jpg 2x">
+              <img srcset="@img/catalog-1.jpg 1x,
+                           @img/catalog-1@2x.jpg 2x" class="product-card__image" width="260" height="195" alt="Flovers">
+            </picture></a>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="#" class="catalog__link"><h3 class="product-card__title">Sweetheart's Delight</h3></a>
+                <p class="product-card__options">Flower types: roses/pionies, size and shape: cascading</p>
+              </div>
+              <div class="product-card__buy">
+                <p class="product-card__price">$ 58.99</p>
+                <button class="product-card__button button__cart"><svg class="product-card__icon" width="20" height="20"><use xlink:href="#cart-icon"></use></svg></button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item product-card">
+            <a href="#" class="catalog__link product-card__link"><picture >
+              <source media="(min-width:1200px)" srcset="@img/catalog-2.jpg 1x,
+                                                          @img/catalog-2@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="@img/catalog-2.jpg 1x,
+                                                        @img/catalog-2@2x.jpg 2x">
+              <img srcset="@img/catalog-2.jpg 1x,
+                           @img/catalog-2.jpg 2x" class="product-card__image" width="260" height="195" alt="Flowers">
+            </picture></a>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="#" class="catalog__link"><h3 class="product-card__title">Enchanted Elegance</h3></a>
+                <p class="product-card__options">Flower types: roses, size and shape: round and compact</p>
+              </div>
+              <div class="product-card__buy">
+                <p class="product-card__price">$ 44.99</p>
+                <button class="product-card__button button__cart"><svg class="product-card__icon" width="20" height="20"><use xlink:href="#cart-icon"></use></svg></button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item product-card">
+            <a href="#" class="catalog__link product-card__link"><picture >
+              <source media="(min-width:1200px)" srcset="@img/catalog-3.jpg 1x,
+                                                          @img/catalog-3@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="@img/catalog-3.jpg 1x,
+                                                        @img/catalog-3@2x.jpg 2x">
+              <img srcset="@img/catalog-3.jpg  1x,
+                           @img/catalog-3@2x.jpg  2x" class="product-card__image" width="260" height="195" alt="Flowers">
+            </picture></a>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="#" class="catalog__link"><h3 class="product-card__title">Blushing Beauty</h3></a>
+                <p class="product-card__options">Flower types: roses, size and shape: asymmetrical</p>
+              </div>
+              <div class="product-card__buy">
+                <p class="product-card__price">$ 35.50</p>
+                <button class="product-card__button button__cart"><svg class="product-card__icon" width="20" height="20"><use xlink:href="#cart-icon"></use></svg></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="production">
+      <div class="production__wrapper">
+        <div class="production__item">
+        <h2 class="production__title">
+          <svg class="production__icon" width="32" height="22"><use xlink:href="#camera-icon"></use></svg>
+          Art in detail
+        </h2>
+        <article class="production__video video">
+
+          <picture >
+            <source media="(min-width:1200px)" srcset="@img/catalog-4.jpg 1x,
+                                                        @img/catalog-4@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="@img/catalog-4.jpg 1x,
+                                                      @img/catalog-4@2x.jpg 2x">
+            <img srcset="@img/catalog-4.jpg 1x,
+                         @img/catalog-4@2x.jpg 2x" class="video__image" width="260" height="150" alt="Flowers">
+          </picture>
+          <a href="" class="video__link">
+            <img src="@img/svg/play.svg" alt="">
+          </a>
+        </article>
+        <div class="production__bottom">
+          <p class="production__text">
+            Come and witness the artistry of our florists as they skillfully craft beautiful masterpieces that will take your breath away.</p>
+          <button class="production__button button">Make an order</button>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a href="" class="page-footer__logo"><svg class="page-footer__image"><use xlink:href="#logo-footer"></use></svg></a>
+      <ul class="page-footer__social social">
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--insta" width="30" height="30"><use xlink:href="#instagram-icon"></use></svg></a></li>
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--fb" width="30" height="30"><use xlink:href="#facebook-icon-white"></use></svg></a></li>
+        <li class="social__item"><a href="" class="social__link"><svg class="social__icons social__icons--tw" width="30" height="30"><use xlink:href="#twitter-icon"></use></svg></a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__title">Copyright:</p>
+        <a href="www.iconfinder.com">iconfinder</a>
+        <a href="www.pinterest.com">pinterest</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.min.js"></script>
+</body>
+</html>
