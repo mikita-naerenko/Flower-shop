@@ -13,7 +13,7 @@
   </svg>
   <header class="page-header">
     <div class="page-header__wrapper">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__board">
       <a href="index.html" class="main-nav__logo">
         <picture>
@@ -39,145 +39,106 @@
     </nav>
     </div>
   </header>
+
   <main>
     <h1 class="visually-hidden">Online Flowers Shop</h1>
-    <section class="hero">
-      <div class="hero__wrapper">
-        <div class="hero__jumbotron">
-          <h2 class="hero__slogan">Please those<br> who<br class="hero__slogan--desktop"> are dear to you.</h2>
-        </div>
-      </div>
-    </section>
-    <section class="nav-catalog">
-      <div class="nav-catalog__wrapper">
-        <ul class="nav-catalog__list">
-          <li class="nav-catalog__item nav-catalog__item--interior"><a href=""><span class="nav-catalog__title">Spring<br> flowers</span>
-            <svg class="nav-catalog__icon nav-catalog__icon--interior" width="60" height="62"><use xlink:href="#spring-flowers"></use></svg>
-          </a></li>
-          <li class="nav-catalog__item nav-catalog__item--toys"><a href=""><span class="nav-catalog__title">Preserved<br> roses</span>
-            <svg class="nav-catalog__icon nav-catalog__icon--toy"  width="60" height="60"><use xlink:href="#preserved-roses"></use></svg>
-          </a></li>
+    <div class="hero__wrapper">
+      <h2 class="page-title page-title--catalog">Catalog</h2>
+    </div>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <ul class="catalog__list ">
+          <li class="catalog__item product-card">
+            <a href="#" class="catalog__link product-card__link"><picture >
+              <source media="(min-width:1200px)" srcset="img/catalog-1.jpg 1x,
+                                                          img/catalog-1@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/catalog-1.jpg 1x,
+                                                        img/catalog-1@2x.jpg 2x">
+              <img srcset="img/catalog-1.jpg 1x,
+                           img/catalog-1@2x.jpg 2x" class="product-card__image" width="260" height="195" alt="Flovers">
+            </picture></a>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="#" class="catalog__link"><h3 class="product-card__title">Sweetheart's Delight</h3></a>
+                <p class="product-card__options">Flower types: roses/pionies, size and shape: cascading</p>
+              </div>
+              <div class="product-card__buy">
+                <p class="product-card__price">$ 58.99</p>
+                <button class="product-card__button button__cart"><svg class="product-card__icon" width="20" height="20"><use xlink:href="#cart-icon"></use></svg></button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item product-card">
+            <a href="#" class="catalog__link product-card__link"><picture >
+              <source media="(min-width:1200px)" srcset="img/catalog-2.jpg 1x,
+                                                          img/catalog-2@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/catalog-2.jpg 1x,
+                                                        img/catalog-2@2x.jpg 2x">
+              <img srcset="img/catalog-2.jpg 1x,
+                           img/catalog-2.jpg 2x" class="product-card__image" width="260" height="195" alt="Flowers">
+            </picture></a>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="#" class="catalog__link"><h3 class="product-card__title">Enchanted Elegance</h3></a>
+                <p class="product-card__options">Flower types: roses, size and shape: round and compact</p>
+              </div>
+              <div class="product-card__buy">
+                <p class="product-card__price">$ 44.99</p>
+                <button class="product-card__button button__cart"><svg class="product-card__icon" width="20" height="20"><use xlink:href="#cart-icon"></use></svg></button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item product-card">
+            <a href="#" class="catalog__link product-card__link"><picture >
+              <source media="(min-width:1200px)" srcset="img/catalog-3.jpg 1x,
+                                                          img/catalog-3@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/catalog-3.jpg 1x,
+                                                        img/catalog-3@2x.jpg 2x">
+              <img srcset="img/catalog-3.jpg  1x,
+                           img/catalog-3@2x.jpg  2x" class="product-card__image" width="260" height="195" alt="Flowers">
+            </picture></a>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="#" class="catalog__link"><h3 class="product-card__title">Blushing Beauty</h3></a>
+                <p class="product-card__options">Flower types: roses, size and shape: asymmetrical</p>
+              </div>
+              <div class="product-card__buy">
+                <p class="product-card__price">$ 35.50</p>
+                <button class="product-card__button button__cart"><svg class="product-card__icon" width="20" height="20"><use xlink:href="#cart-icon"></use></svg></button>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
-    <section class="product-week">
-      <div class="product-week__wrapper">
-        <div class="product-week__header">
-          <h2 class="product-week__label">Thinking of you</h2>
-          <h2 class="product-week__title">BEST<br> OFF <br>WEEK</h2>
-        </div>
-        <div class="product-week__wrapper--main">
-        <div class="product-week__info">
-          <p class="product-week__description">A stunning bouquet of fresh flowers, bursting with vibrant hues and sweet fragrance, carefully crafted to bring joy.</p>
-          <table class="product-week__parameter">
-            <tr>
-              <td class="product-week__item">Includes:</td>
-              <td class="product-week__value">"Coral Roses/Peach Roses"</td>
-            </tr>
-            <tr>
-              <td class="product-week__item">Package:</td>
-              <td class="product-week__value">Craft Paper</td>
-            </tr>
-            <tr>
-              <td class="product-week__item">Extra:</td>
-              <td class="product-week__value">Personal Card Message</td>
-            </tr>
-          </table>
-        </div>
-        <picture class="produck-week__image">
-          <source media="(min-width:1200px)" srcset="img/2.jpg 1x,
-                                                    img/2@2x.jpg  2x">
-          <source media="(min-width:768px)" srcset="img/2.jpg  1x,
-                                                   img/2@2x.jpg 2x">
+    <section class="production">
+      <div class="production__wrapper">
+        <div class="production__item">
+        <h2 class="production__title">
+          <svg class="production__icon" width="32" height="22"><use xlink:href="#camera-icon"></use></svg>
+          Art in detail
+        </h2>
+        <article class="production__video video">
 
-          <img srcset="img/2.jpg 1x,
-                       img/2.jpg 2x" alt="product's photo" class="product-week__image">
-        </picture>
-
-        <div class="product-week__footer">
-          <p class="product-week__price">Price: $ 43.99</p>
-          <button class="product-week__button button">ORDER</button>
+          <picture >
+            <source media="(min-width:1200px)" srcset="img/catalog-4.jpg 1x,
+                                                        img/catalog-4@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/catalog-4.jpg 1x,
+                                                      img/catalog-4@2x.jpg 2x">
+            <img srcset="img/catalog-4.jpg 1x,
+                         img/catalog-4@2x.jpg 2x" class="video__image" width="260" height="150" alt="Flowers">
+          </picture>
+          <a href="" class="video__link">
+            <img src="img/svg/play.svg" alt="">
+          </a>
+        </article>
+        <div class="production__bottom">
+          <p class="production__text">
+            Come and witness the artistry of our florists as they skillfully craft beautiful masterpieces that will take your breath away.</p>
+          <button class="production__button button">Make an order</button>
         </div>
       </div>
       </div>
-    </section> 
-    <section class="about">
-      <div class="about__wrapper">
-        <h2 class="about__title">About us:</h2>
-        <ul class="about__list">
-          <li class="about__item about__item--ecology">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#eco-icon"></use></svg>
-            <p class="about__text">Recycling <br>package</p></li>
-          <li class="about__item about__item--style">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#delivery-icon"></use></svg>
-            <p class="about__text">Fast<br>delivery worldwide</p></li>
-          <li class="about__item about__item--like">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#heart-icon"></use></svg>
-            <p class="about__text">
-              Work <br> done with love</p></li>
-          <li class="about__item about__item--love">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#branch-icon"></use></svg>
-            <p class="about__text">
-              Offices on <br> 5 continents</p></li>
-          <li class="about__item about__item--support">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#florist-icon"></use></svg>
-            <p class="about__text">Bouquets are made by <br> professional florists</p></li>
-          <li class="about__item about__item--package">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#discount-icon"></use></svg>
-            <p class="about__text">Flexible system <br> of discounts</p></li>
-        </ul>
-      </div> 
-    </section>
-    <sectoin class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Reviews</h2>
-        <blockquote class="reviews__item slider__item">
-          <p class="reviews__text">The flowers bundle was absolutely breathtaking!
-             The arrangement was stunning, with a variety of colors and textures 
-             that blended perfectly together. The blooms were fresh and fragrant, and they
-              lasted for over a week. It was the perfect gift for a special occasion or just
-               to brighten up any room. Highly recommended!</p>
- 
-        </blockquote>
-        <cite class="reviews__author-name">Mary Williams<br>
-          <a href="" class="reviews__author-instagram"> @example</a></cite>
-
-        <div class="reviews__button-wrapper">
-        <button class="reviews__prev" type="button">
-              <svg class="reviews__button-icon" width="50" height="26"><use xlink:href="#huge-arrow-left"></use></svg>
-              <span class="visually-hidden">Previous review</span></button>
-            <button class="reviews__next" type="button">
-              <svg class="reviews__button-icon" width="50" height="26"><use xlink:href="#huge-arrow-right"></use></svg>
-              <span class="visually-hidden">Next review</span></button>
-
-          </div>
-        <button class="reviews__write button">Write a review</button>
-      </div>
-    </sectoin>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <div class="contacts__list-wrapper">
-          <h2 class="contacts__title">Contacts</h2>
-            <table class="contacts__list">
-              <tr>
-                <td class="contacts__item">e-mail:</td>
-                <td class="contacts__email"><a href="mailto:info@mimimishkashop.ru">info@flowers-shop.com</a></td>
-              </tr>
-              <tr>
-                <td class="contacts__item">address:</td>
-                <td class="contacts__address">Commercial Park Ave
-                  Rathdrum, Idaho(ID), 83858</td>
-              </tr>
-            </table>
-        </div>
-
-      </div>
-       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2679.1882643359336!2d-116.87617204881374!3d47.816569079097086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5361eafc96f86887%3A0x70dc20c30797f427!2zQ29tbWVyY2lhbCBQYXJrIEF2ZSwgUmF0aGRydW0sIElEIDgzODU4LCDQodCo0JA!5e0!3m2!1sru!2skr!4v1678409415887!5m2!1sru!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contacts__wrapper">
-        <a href="" class="contacts__button button">Write to us</a>
-        </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -190,40 +151,11 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__title">Copyright:</p>
-        <p>This project was created with learning target</p>
-        <p>Icon:<a href="www.iconfinder.com">iconfinder</a></p>
-        <p>Graphics:<a href="www.pinterest.com">pinterest</a></p>
-        <p>The layout of this website was inspired by:<br> <a href="https://htmlacademy.ru/">html Academy's Mishka project.</a></p>
+        <a href="www.iconfinder.com">iconfinder</a>
+        <a href="www.pinterest.com">pinterest</a>
       </div>
     </div>
   </footer>
-  <div class="modal modal--closed">
-    <div class="modal__fade"></div>
-    <div class="modal__block">
-      <h2 class="modal__title">ADD TO CART</h2>
-      <p class="modal__text">Choose size:</p>
-      <form class="modal__form" action="" method="post"></form>
-      <ul class="modal__list">
-
-        <li class="modal__item">
-          <input id="size-S" class="modal__hidden-checkbox visually-hidden"  type="radio" value="S" name="size">
-          <label class="modal__radio-button" for="size-S">S</label>
-        </li>
-        <li class="modal__item">
-          <input id="size-M" class="modal__hidden-checkbox visually-hidden"  type="radio" value="M" name="size">
-          <label class="modal__radio-button" for="size-M">M</label>
-        </li>
-        <li class="modal__item">
-          <input id="size-L" class="modal__hidden-checkbox visually-hidden" type="radio" value="L" name="size">
-          <label class="modal__radio-button" for="size-L">L</label>
-        </li>
-      </ul>
-      <button class="button" type="submit">ADD</button>
-      </form>
-    </div>
-
-  </div>
   <script src="js/app.min.js?_v=20230320222726"></script>
 </body>
 </html>
- 

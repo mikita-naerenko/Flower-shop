@@ -13,7 +13,7 @@
   </svg>
   <header class="page-header">
     <div class="page-header__wrapper">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__board">
       <a href="index.html" class="main-nav__logo">
         <picture>
@@ -28,156 +28,124 @@
       <ul class="main-nav__list site-list">
         <a href="catalog.html"><li class="main-nav__item site-list__item main-nav__item--catalog">Catalog</li></a>
         <a href="form.html"><li class="main-nav__item site-list__item main-nav__item--order">Вouquet to order</li></a>
-        <a href=""><li class="main-nav__item site-list__item main-nav__item--new main-nav__item--mobile-hidden">New arrivals</li></a>
-        <a href=""><li class="main-nav__item site-list__item main-nav__item--sale main-nav__item--mobile-hidden">Sale</li></a>
       </ul>
       <ul class="main-nav__list user-list">
        <a href=""><li class="main-nav__item user-list__item user-list__item--search"><svg class="user-list__icon"  width="30" height="30"><use xlink:href="#search-icon-white"></use></svg><span class="user-list__item--search">Site search</span></li></a>
         <a href=""><li class="main-nav__item user-list__item user-list__item--cart"><svg class="user-list__icon" width="20" height="20" fill="#d3d2d2"><use xlink:href="#cart-icon-white"></use></svg>Cart: is empty</li></a>
-        <a href=""><li class="main-nav__item user-list__item main-nav__item--delivery main-nav__item--mobile-hidden">Free worldwide shipping</li></a>
       </ul>
     </nav>
     </div>
   </header>
   <main>
-    <h1 class="visually-hidden">Online Flowers Shop</h1>
-    <section class="hero">
-      <div class="hero__wrapper">
-        <div class="hero__jumbotron">
-          <h2 class="hero__slogan">Please those<br> who<br class="hero__slogan--desktop"> are dear to you.</h2>
-        </div>
+    <h1 class="visually-hidden">Online Flowers Shop. Form for order.</h1>
+    <h2 class="page-title"> Form for Ordering a Bouquet</h2>
+    <section class="form">
+      <div class="form__wrapper">
+      <p class="form__text">
+        We would love to bring your floral vision to life! Simply complete our easy order form and we'll follow up with you to confirm the specifics.
+      </p>
       </div>
-    </section>
-    <section class="nav-catalog">
-      <div class="nav-catalog__wrapper">
-        <ul class="nav-catalog__list">
-          <li class="nav-catalog__item nav-catalog__item--interior"><a href=""><span class="nav-catalog__title">Spring<br> flowers</span>
-            <svg class="nav-catalog__icon nav-catalog__icon--interior" width="60" height="62"><use xlink:href="#spring-flowers"></use></svg>
-          </a></li>
-          <li class="nav-catalog__item nav-catalog__item--toys"><a href=""><span class="nav-catalog__title">Preserved<br> roses</span>
-            <svg class="nav-catalog__icon nav-catalog__icon--toy"  width="60" height="60"><use xlink:href="#preserved-roses"></use></svg>
-          </a></li>
+      <form action="" class="form">
+
+      <fieldset class="form__fieldset fieldset ">
+        <div class="fieldset__wrapper">
+        <legend class="fieldset__title">Type of bouquet</legend>
+        <ul class="fieldset__list fieldset__list--type">
+          <li class="fieldset__item fieldset__item--type">
+            <input id="round" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="round" class="fieldset__label fieldset__radio">Round</label>
+          </li>
+          <li class="fieldset__item fieldset__item--type">
+            <input id="cascading" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="cascading" class="fieldset__label fieldset__radio">Cascading</label>
+          </li>
+          <li class="fieldset__item fieldset__item--type">
+            <input id="hand-tied" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="hand-tied" class="fieldset__label fieldset__radio">Hand-tied</label>
+          </li>
+          <li class="fieldset__item fieldset__item--type">
+            <input id="nosegay" type="radio" name="order-type" class="fieldset__input-radio visually-hidden">
+            <label for="nosegay" class="fieldset__label fieldset__radio">Nosegay</label>
+          </li>
         </ul>
       </div>
-    </section>
-    <section class="product-week">
-      <div class="product-week__wrapper">
-        <div class="product-week__header">
-          <h2 class="product-week__label">Thinking of you</h2>
-          <h2 class="product-week__title">BEST<br> OFF <br>WEEK</h2>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset--grey">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Includes</legend>
+          <ul class="fieldset__list fieldset__list--includes">
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="daisy" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="daisy" class="fieldset__label fieldset__checkbox">Daisy</label></li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="lily" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="lily" class="fieldset__label fieldset__checkbox">Lily</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="tulip" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="tulip" class="fieldset__label fieldset__checkbox">Tulip</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="sunflower" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="sunflower" class="fieldset__label fieldset__checkbox">Sunflower</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="rose" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="rose" class="fieldset__label fieldset__checkbox">Rose</label>
+            </li>
+            <li class="fieldset__item fieldset__item--includes">
+              <input id="orchid" type="checkbox" class="fieldset__input-checkbox visually-hidden">
+              <label for="orchid" class="fieldset__label fieldset__checkbox">Orchid</label>
+            </li>
+          </ul>
         </div>
-        <div class="product-week__wrapper--main">
-        <div class="product-week__info">
-          <p class="product-week__description">A stunning bouquet of fresh flowers, bursting with vibrant hues and sweet fragrance, carefully crafted to bring joy.</p>
-          <table class="product-week__parameter">
-            <tr>
-              <td class="product-week__item">Includes:</td>
-              <td class="product-week__value">"Coral Roses/Peach Roses"</td>
-            </tr>
-            <tr>
-              <td class="product-week__item">Package:</td>
-              <td class="product-week__value">Craft Paper</td>
-            </tr>
-            <tr>
-              <td class="product-week__item">Extra:</td>
-              <td class="product-week__value">Personal Card Message</td>
-            </tr>
-          </table>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Full name</legend>
+          <ul class="fieldset__list fieldset__list--name">
+            <li class="fieldset__item fieldset__item--name">
+              <label for="first-name" class="fieldset__label fieldset__name">First name:</label>
+              <input class="fieldset__input fieldset__input--name" id="first-name" type="text" name="name" placeholder="Enter your name*">
+            </li>
+            <li class="fieldset__item fieldset__item--name">
+              <label for="surname" class="fieldset__label fieldset__name">Surname:</label>
+              <input class="fieldset__input fieldset__input--name" id="surname" type="text" name="name" placeholder="Please enter your last name*">
+            </li>
+            <li class="fieldset__item fieldset__item--name">
+              <label for="gender" class="fieldset__label fieldset__name">Gender:</label>
+              <input class="fieldset__input fieldset__input--name" id="gender" type="text" name="name" placeholder="Gender: Optional">
+            </li>
+          </ul>
         </div>
-        <picture class="produck-week__image">
-          <source media="(min-width:1200px)" srcset="img/2.jpg 1x,
-                                                    img/2@2x.jpg  2x">
-          <source media="(min-width:768px)" srcset="img/2.jpg  1x,
-                                                   img/2@2x.jpg 2x">
-
-          <img srcset="img/2.jpg 1x,
-                       img/2.jpg 2x" alt="product's photo" class="product-week__image">
-        </picture>
-
-        <div class="product-week__footer">
-          <p class="product-week__price">Price: $ 43.99</p>
-          <button class="product-week__button button">ORDER</button>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset--grey">
+        <div class="fieldset__wrapper">
+          <ul class="fieldset__list fieldset__list--contacts">
+            <li  class="fieldset__item fieldset__item--phone"><label class="fieldset__title fieldset__title--contacts" for="phone">Phone</label>
+            <input id="phone" class="fieldset__input fieldset__input--phone" type="tel" name="phone" placeholder="+1 ХХХ-ХХХХ*">
+            <svg class="fieldset__icon fieldset__icon--phone" width="25" height="24"><use xlink:href="#phone-icon"></use></svg>
+            </li>
+            <li  class="fieldset__item fieldset__item--email"><label class="fieldset__title fieldset__title--contacts" for="email">Email</label>
+              <input id="email" class="fieldset__input fieldset__input--email" type="email" name="email" placeholder="Email*">
+              <svg class="fieldset__icon fieldset__icon--email" width="32" height="32"><use xlink:href="#mail-icon"></use></svg>
+            </li>
+          </ul>
         </div>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset fieldset">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Additionally</legend>
+          <input type="text" name="text" class="fieldset__input fieldset__input--text" placeholder="Please describe all of your order preferences and specifications">
+        </div>
+      </fieldset>
+      <div class="fieldset__wrapper fieldset__wrapper--footer">
+        <small class="form__important">All fields marked with an asterisk (*) are required.</small>
+        <button class="form__button button" type="submit">SEND AN ORDER</button>
       </div>
-      </div>
-    </section> 
-    <section class="about">
-      <div class="about__wrapper">
-        <h2 class="about__title">About us:</h2>
-        <ul class="about__list">
-          <li class="about__item about__item--ecology">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#eco-icon"></use></svg>
-            <p class="about__text">Recycling <br>package</p></li>
-          <li class="about__item about__item--style">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#delivery-icon"></use></svg>
-            <p class="about__text">Fast<br>delivery worldwide</p></li>
-          <li class="about__item about__item--like">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#heart-icon"></use></svg>
-            <p class="about__text">
-              Work <br> done with love</p></li>
-          <li class="about__item about__item--love">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#branch-icon"></use></svg>
-            <p class="about__text">
-              Offices on <br> 5 continents</p></li>
-          <li class="about__item about__item--support">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#florist-icon"></use></svg>
-            <p class="about__text">Bouquets are made by <br> professional florists</p></li>
-          <li class="about__item about__item--package">
-            <svg class="about__icon" width="40" height="50"><use xlink:href="#discount-icon"></use></svg>
-            <p class="about__text">Flexible system <br> of discounts</p></li>
-        </ul>
-      </div> 
-    </section>
-    <sectoin class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Reviews</h2>
-        <blockquote class="reviews__item slider__item">
-          <p class="reviews__text">The flowers bundle was absolutely breathtaking!
-             The arrangement was stunning, with a variety of colors and textures 
-             that blended perfectly together. The blooms were fresh and fragrant, and they
-              lasted for over a week. It was the perfect gift for a special occasion or just
-               to brighten up any room. Highly recommended!</p>
- 
-        </blockquote>
-        <cite class="reviews__author-name">Mary Williams<br>
-          <a href="" class="reviews__author-instagram"> @example</a></cite>
+      </form>
 
-        <div class="reviews__button-wrapper">
-        <button class="reviews__prev" type="button">
-              <svg class="reviews__button-icon" width="50" height="26"><use xlink:href="#huge-arrow-left"></use></svg>
-              <span class="visually-hidden">Previous review</span></button>
-            <button class="reviews__next" type="button">
-              <svg class="reviews__button-icon" width="50" height="26"><use xlink:href="#huge-arrow-right"></use></svg>
-              <span class="visually-hidden">Next review</span></button>
 
-          </div>
-        <button class="reviews__write button">Write a review</button>
-      </div>
-    </sectoin>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <div class="contacts__list-wrapper">
-          <h2 class="contacts__title">Contacts</h2>
-            <table class="contacts__list">
-              <tr>
-                <td class="contacts__item">e-mail:</td>
-                <td class="contacts__email"><a href="mailto:info@mimimishkashop.ru">info@flowers-shop.com</a></td>
-              </tr>
-              <tr>
-                <td class="contacts__item">address:</td>
-                <td class="contacts__address">Commercial Park Ave
-                  Rathdrum, Idaho(ID), 83858</td>
-              </tr>
-            </table>
-        </div>
-
-      </div>
-       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2679.1882643359336!2d-116.87617204881374!3d47.816569079097086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5361eafc96f86887%3A0x70dc20c30797f427!2zQ29tbWVyY2lhbCBQYXJrIEF2ZSwgUmF0aGRydW0sIElEIDgzODU4LCDQodCo0JA!5e0!3m2!1sru!2skr!4v1678409415887!5m2!1sru!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contacts__wrapper">
-        <a href="" class="contacts__button button">Write to us</a>
-        </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -190,40 +158,11 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__title">Copyright:</p>
-        <p>This project was created with learning target</p>
-        <p>Icon:<a href="www.iconfinder.com">iconfinder</a></p>
-        <p>Graphics:<a href="www.pinterest.com">pinterest</a></p>
-        <p>The layout of this website was inspired by:<br> <a href="https://htmlacademy.ru/">html Academy's Mishka project.</a></p>
+        <a href="www.iconfinder.com">iconfinder</a>
+        <a href="www.pinterest.com">pinterest</a>
       </div>
     </div>
   </footer>
-  <div class="modal modal--closed">
-    <div class="modal__fade"></div>
-    <div class="modal__block">
-      <h2 class="modal__title">ADD TO CART</h2>
-      <p class="modal__text">Choose size:</p>
-      <form class="modal__form" action="" method="post"></form>
-      <ul class="modal__list">
-
-        <li class="modal__item">
-          <input id="size-S" class="modal__hidden-checkbox visually-hidden"  type="radio" value="S" name="size">
-          <label class="modal__radio-button" for="size-S">S</label>
-        </li>
-        <li class="modal__item">
-          <input id="size-M" class="modal__hidden-checkbox visually-hidden"  type="radio" value="M" name="size">
-          <label class="modal__radio-button" for="size-M">M</label>
-        </li>
-        <li class="modal__item">
-          <input id="size-L" class="modal__hidden-checkbox visually-hidden" type="radio" value="L" name="size">
-          <label class="modal__radio-button" for="size-L">L</label>
-        </li>
-      </ul>
-      <button class="button" type="submit">ADD</button>
-      </form>
-    </div>
-
-  </div>
   <script src="js/app.min.js?_v=20230320222726"></script>
 </body>
 </html>
- 
