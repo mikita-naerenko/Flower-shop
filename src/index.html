@@ -76,7 +76,7 @@
             </tr>
             <tr>
               <td class="product-week__item">Package:</td>
-              <td class="product-week__value">craft paper</td>
+              <td class="product-week__value">Craft Paper</td>
             </tr>
             <tr>
               <td class="product-week__item">Extra:</td>
@@ -197,7 +197,32 @@
       </div>
     </div>
   </footer>
-  
+  <div class="modal modal--closed">
+    <div class="modal__fade"></div>
+    <div class="modal__block">
+      <h2 class="modal__title">ADD TO CART</h2>
+      <p class="modal__text">Choose size:</p>
+      <form class="modal__form" action="" method="post"></form>
+      <ul class="modal__list">
+
+        <li class="modal__item">
+          <input id="size-S" class="modal__hidden-checkbox visually-hidden"  type="radio" value="S" name="size">
+          <label class="modal__radio-button" for="size-S">S</label>
+        </li>
+        <li class="modal__item">
+          <input id="size-M" class="modal__hidden-checkbox visually-hidden"  type="radio" value="M" name="size">
+          <label class="modal__radio-button" for="size-M">M</label>
+        </li>
+        <li class="modal__item">
+          <input id="size-L" class="modal__hidden-checkbox visually-hidden" type="radio" value="L" name="size">
+          <label class="modal__radio-button" for="size-L">L</label>
+        </li>
+      </ul>
+      <button class="button" type="submit">ADD</button>
+      </form>
+    </div>
+
+  </div>
   <script src="js/app.min.js"></script>
 </body>
 </html>

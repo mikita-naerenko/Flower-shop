@@ -47,3 +47,27 @@ window.addEventListener('resize', function(){
   navMain.classList.remove('main-nav--opened');
  }
 });
+
+productWeekButton.addEventListener('click', function() {
+  if (modal.classList.contains('modal--closed')
+   ) {
+    modal.classList.remove('modal--closed');
+    modal.classList.add('modal--open');
+}
+});
+
+modalFade.addEventListener('click', function() {
+  if (modal.classList.contains('modal--open')) {
+    modal.classList.remove('modal--open');
+    modal.classList.add('modal--closed');
+  }
+
+});
+
+document.querySelector('.modal').querySelector('button').addEventListener('click', function(){
+
+  if (modal.classList.contains('modal--open')) {
+    modal.classList.remove('modal--open');
+    modal.classList.add('modal--closed');
+  }
+});
